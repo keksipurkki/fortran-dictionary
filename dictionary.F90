@@ -584,7 +584,7 @@ program test
     do
       read(32, '(A)', iostat=io) word
       if (io < 0) exit
-      call d%insert(trim(word), "Jou jou jou")
+      call d%insert(trim(word), "A DUMMY TEST STRING")
     enddo
 
     close(32)
